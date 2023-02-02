@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+
+    <body>
+        <!--  
+            .header_component: contenedor de la sesion, definimos un ID
+            .para implementar este elemento en './src/js/main.js'
+        -->
+        <header class="header_component" id="header-component">
+            <%- include('../partials/header'); %>
+        </header>
+
+        <!--  
+            components_container: contenedor de nav_component y de main_components
+        -->
+        <div class="components_container">
+            <!--  
+                .nav_component: contenedor de la sesion, definimos un ID 
+                .para implementar este elemento en './src/js/main.js'
+            -->
+            <nav class="nav_component" id="menu-nav"><%- include('../partials/navbar'); %></nav>
+
+            <!--  
+                main_components: contenedor de section_banner,
+                section_container y 1 tag-footer
+            -->
+            <main class="main_components">
+                <!--  
+                    section_banner: contenedor de 1 tag-h2, de banner_line_titles
+                    y 1 tag-p
+                -->
+                <section class="section_banner">
+                    <!--  
+                        tag-h2: en esta definimos el titulo del banner
+                    -->
+                    <h2>Success</h2>
+
+                    <!--  
+                        banner_line_titles: esta tag la definimos para crear la
+                        linea del titulo
+                    -->
+                    <div class="banner_line_titles"></div>
+
+                    <!--  
+                        tag-p: en esta definimos el parrafo de la seccion
+                    -->
+                    <p>
+                        Este comando nos permite pasar nuestro proyecto de un repositorio local a un
+                        repositorio en la nube, para esto debemos contar con una url de conexion la
+                        cual funciona como puente para el intercambio de archivos entre
+                        <strong>git</strong> y <strong>github</strong>
+                    </p>
+                </section>
+
+                <!--  
+                    sections_container: contenedor de las secciones que componen
+                    esta vista
+                -->
+                <div class="sections_container">
+                    <!--  
+						sect_content: contenedor de 1 tag-h3 y de sect_box_img
+					-->
+                    <section class="sect_content">
+                        <!--  
+							tag-h3: en esta definimos el titulo de la seccion
+						-->
+                        <h3>01. Accediendo a github</h3>
+
+                        <!--  
+							sect_box_img: contenedor de 1 tag-img
+						-->
+                        <div class="sect_box_img">
+                            <img
+                                src="./assets/images/push/success/g06.png"
+                                alt="accediendo a github"
+                            />
+                        </div>
+                    </section>
+
+                    <section class="sect_content">
+                        <h3>02. Nuevo repositorio</h3>
+
+                        <div class="sect_box_img">
+                            <img
+                                src="./assets/images/push/success/g08.png"
+                                alt="nuevo repositorio"
+                            />
+                        </div>
+                    </section>
+
+                    <section class="sect_content">
+                        <h3>03. Nombre del repositorio</h3>
+
+                        <div class="sect_box_img">
+                            <img
+                                src="./assets/images/push/success/g09.png"
+                                alt="nombre del repositorio"
+                            />
+                        </div>
+                    </section>
+
+                    <section class="sect_content">
+                        <h3>04. Url de conexion al repositorio</h3>
+
+                        <div class="sect_box_img">
+                            <img
+                                src="./assets/images/push/success/g10.png"
+                                alt="url de conexion al repositorio"
+                            />
+                        </div>
+                    </section>
+
+                    <section class="sect_content">
+                        <h3>05. Conectando git con github</h3>
+
+                        <!--  
+                            code_box: en esta definimos la guia de codigo en ejecucion
+                        -->
+                        <p class="code_box">
+                            <span>></span> git <strong>remote</strong> add origin "url"
+                        </p>
+
+                        <div class="sect_box_img">
+                            <img
+                                src="./assets/images/push/success/g11.png"
+                                alt="conectando git con github"
+                            />
+                        </div>
+                    </section>
+
+                    <section class="sect_content">
+                        <h3>06. Subiendo cambios a github</h3>
+
+                        <p class="code_box">
+                            <span>></span> git <strong>push</strong> origin "rama"
+                        </p>
+
+                        <div class="sect_box_img">
+                            <img
+                                src="./assets/images/push/success/g12.png"
+                                alt="subiendo cambios a github"
+                            />
+                        </div>
+                    </section>
+
+                    <section class="sect_content">
+                        <h3>07. Cambios subidos correctamente</h3>
+
+                        <div class="sect_box_img">
+                            <img
+                                src="./assets/images/push/success/g13.png"
+                                alt="cambios subidos correctamente"
+                            />
+                        </div>
+                    </section>
+
+                    <!--  
+                        section_footer
+                    -->
+                    <footer class="section_footer">Success - Push</footer>
+                </div>
+            </main>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>

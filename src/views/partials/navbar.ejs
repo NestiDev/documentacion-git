@@ -1,0 +1,115 @@
+<!--  
+	search_box: contenedor de 1 tag-input y 1 tag-a
+-->
+<div class="search_box">
+    <!--  
+		tag-input: en esta definimos el buscador
+	-->
+    <input type="text" name="search" autocomplete="off" placeholder="Buscar" />
+
+    <!--  
+		tag-a: contiene 1 tag-svg
+	-->
+    <a href="#" class="search_btn">
+        <!--  
+			tag-svg: en esta definimos el icono del buscador
+		-->
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+            ></path>
+        </svg>
+    </a>
+</div>
+
+<!--  
+	ul: en esta definimos los items del menu de navegacion
+-->
+<ul>
+    <li class="li_dropdown"><a href="/config">01. Config</a></li>
+
+    <li class="li_dropdown"><a href="/init">02. Init</a></li>
+
+    <li class="li_dropdown"><a href="/add">03. Add</a></li>
+
+    <li class="li_dropdown"><a href="/ignore">04. Ignore</a></li>
+
+    <!--  
+		:li_dropdown: contenedor de 1tag-a y 1 tag-ul, la clase
+		:li_dropdown se implementa en javascript
+	-->
+    <li class="li_dropdown">
+        <a href="#" data-toggle="dropdown">
+            05. Commit
+
+            <!--          	
+				tag-svg: en este definimos el icono del del item
+			-->
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+                ></path>
+            </svg>
+        </a>
+
+        <!--  
+			:dropdown_menu: en esta definimos el menu de 
+			:navegacion interno
+		-->
+        <ul class="dropdown_menu">
+            <li><a href="/commit-save">a. Save</a></li>
+
+            <li><a href="/commit-revert">b. Revert</a></li>
+
+            <li><a href="/commit-amend">c. Amend</a></li>
+
+            <li><a href="/commit-reset">d. Reset</a></li>
+
+            <li><a href="/commit-checkout">e. Checkout</a></li>
+        </ul>
+    </li>
+
+    <li class="li_dropdown"><a href="/log">06. Log</a></li>
+
+    <li class="li_dropdown"><a href="/branch">07. Branch</a></li>
+
+    <li class="li_dropdown">
+        <a href="#"
+            >08. Merge
+
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+                ></path>
+            </svg>
+        </a>
+
+        <ul class="dropdown_menu">
+            <li><a href="/merge-fusion">a. Fusion</a></li>
+
+            <li><a href="/merge-conflicts">b. Conflicts</a></li>
+        </ul>
+    </li>
+
+    <li class="li_dropdown">
+        <a href="#">
+            09. Push
+
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+                ></path>
+            </svg>
+        </a>
+
+        <ul class="dropdown_menu">
+            <li><a href="/push-success">a. Success</a></li>
+
+            <li><a href="/push-conflicts">b. Conflicts</a></li>
+        </ul>
+    </li>
+
+    <li class="li_dropdown"><a href="/clone">10. Clone</a></li>
+
+    <li class="li_dropdown"><a href="/pull">11. Pull</a></li>
+</ul>
